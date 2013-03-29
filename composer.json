@@ -1,0 +1,19 @@
+{
+    "name": "Success/locale-bundle",
+    "description": "A Bundle for switching Languages",
+    "keywords": ["locale", "bundle", "multilanguage", "language"],
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gaston Caldeiro"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+    },
+    "autoload": {
+        "psr-0": { "Success\\LocaleBundle": "" }
+    },
+    "target-dir": "Success/LocaleBundle"
+}
