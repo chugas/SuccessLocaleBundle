@@ -1,0 +1,5 @@
+language:
+    pattern:   /idioma/{_locale}
+    defaults:  { _controller: LocaleBundle:Locale:switchLanguage }
+#    requirements:
+#        lang: en|es

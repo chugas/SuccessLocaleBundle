@@ -1,0 +1,15 @@
+parameters:
+    locale.listener.class: Success\LocaleBundle\Listener\LocaleListener
+    locale.twig.class: Success\LocaleBundle\Twig\Extension\LocaleExtension
+
+services:
+    kernel.listener.detect_language:
+        class: %locale.listener.class%
+        tags:
+            - { name: kernel.event_listener, event: kernel.request}
+
+    twig.extension.locale:
+        class: %locale.twig.class%
+        arguments: [@service_container]
+        tags:
+            - { name: twig.extension }
