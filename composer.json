@@ -4,6 +4,7 @@
     "keywords": ["locale", "bundle", "multilanguage", "language"],
     "type": "symfony-bundle",
     "license": "MIT",
+    "homepage": "https://github.com/chugas/SuccessLocaleBundle",
     "authors": [
         {
             "name": "Gaston Caldeiro"
