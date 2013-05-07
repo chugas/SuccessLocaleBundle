@@ -1,8 +1,8 @@
 {% for locale in locales %}
   <img src="{{ asset('bundles/locale/images/flags/' ~ locale ~ '.png') }}" />
   {% if locale == app.request.locale %}
-    <span>{{ locale | language  }}</span>
+    <span>{{ locale }}</span>
   {% else %}
-    <a href="{{ path('language', { '_locale': locale }) }}">{{ locale | language }}</a>
+    <a href="{{ path('language', { '_locale': locale }) }}">{{ locale }}</a>
   {% endif %}
 {% endfor %}
