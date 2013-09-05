@@ -11,7 +11,7 @@ class LocaleListener implements EventSubscriberInterface {
 
   private $defaultLocale;
 
-  public function __construct($defaultLocale = 'en') {
+  public function __construct($defaultLocale) {
     $this->defaultLocale = $defaultLocale;
   }
 
@@ -23,7 +23,6 @@ class LocaleListener implements EventSubscriberInterface {
     }
     
     $locale = $request->attributes->get('_locale');
-        
     if ($locale) {
       $request->getSession()->set('_locale', $locale);
     } else {

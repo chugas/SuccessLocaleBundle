@@ -5,6 +5,7 @@ parameters:
 services:
     kernel.listener.detect_language:
         class: %locale.listener.class%
+        arguments: [%locale%]
         tags:
             - { name: kernel.event_listener, event: kernel.request}
 
